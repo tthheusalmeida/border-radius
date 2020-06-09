@@ -1,37 +1,102 @@
 *{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
     color: rgb(50, 50, 50);;
-    background-color: gainsboro;
+    background-color: rgb(220,220,220);
     margin: 0px;
 }
 
-#header h1{
-    font-family: 'Poiret One', cursive;
-    
+#header h1{    
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin: 20px 0% 20px 0%;
+    transition: transform 0.2s;
+}
+
+#header h1:hover{
+    transform: scale(1.2);
 }
 
 #content{
-    height: 350px;
-    background-color: red;
+    height: 420px;
+    background-color: rgb(50, 50, 50);
+    margin: 0px 15% 0px 15%;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px rgb(122, 122, 122);
 }
 
-#footer {
-    height: 120px;
-}
-
-#footer p{
+#content .border-values{
+    background-color: rgb(50, 50, 50);
     text-align: center;
 }
 
-#footer ul li{
-    list-style: none;
-    display: inline;
+#content .border-values label{
+    font-weight: bolder;
+    font-size: 15px;
+    color: rgb(220,220,220);
+    background-color:  rgb(50, 50, 50);
 }
 
-#footer footer ul li img{
+#content .border-values input{
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 50px;
+    background-color: rgb(220,220,220);
+}
+
+#content button{
+    font-size: 20px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(220,220,220);
+    box-shadow: inset 0px 0px 2px rgb(50, 50, 50);
+    transition: transform 0.2s;
+}
+
+#content button:hover{
+    transform: scale(1.1);
+}
+
+#content button:active{
+    color: rgb(220,220,220);
+    background-color: rgb(50, 50, 50);
+    border-color: 10px solid rgb(220,220,220);
+    box-shadow: inset 0px 0px 22px rgb(250,250,250);
+}
+
+.space{
+    margin-top: 8px;
+}
+
+.box{
+    border: 5px solid rgb(255, 0, 0);
+    padding: 10px;
+    margin: 0px 30% 0px 30%;
+    height: 200px;
+
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+}
+
+#footer {
+    height: 100px;
+    margin: 18px 30% 0px 30%;
+}
+
+#footer p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#footer footer p img{
     width: 20px;
+    border-radius: 50%;
+    transition: linear;
+    transition: transform 0.2s;
+}
+
+#footer footer p img:hover{
+    box-shadow: 0px 0px 10px rgb(122, 122, 122);
+    transform: scale(1.2);
 }
 
 footer{

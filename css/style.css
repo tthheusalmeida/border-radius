@@ -1,0 +1,40 @@
+*{
+    color: rgb(50, 50, 50);;
+    background-color: gainsboro;
+    margin: 0px;
+}
+
+#header h1{
+    font-family: 'Poiret One', cursive;
+    
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+#content{
+    height: 350px;
+    background-color: red;
+}
+
+#footer {
+    height: 120px;
+}
+
+#footer p{
+    text-align: center;
+}
+
+#footer ul li{
+    list-style: none;
+    display: inline;
+}
+
+#footer footer ul li img{
+    width: 20px;
+}
+
+footer{
+    padding-top: 20px;
+}
+

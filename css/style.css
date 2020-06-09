@@ -39,6 +39,7 @@
 #content .border-values input{
     font-weight: bolder;
     font-size: 15px;
+    text-align: center;
     border-radius: 10px;
     width: 50px;
     background-color: rgb(220,220,220);

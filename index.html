@@ -7,6 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div id="header">
@@ -14,27 +15,26 @@
     </div>
 
     <div id="content">
-        <div class="box">
+        <div id="box">
             <p></p>
         </div>
         <div class="space"></div>
         <div class="border-values">
-            <label for="fname">border-top-left-radius:</label>
-            <input type="text" placeholder="">
+            <label for="fname" >border-top-left-radius:</label>
+            <input type="number" placeholder="0%" id="tl" max="50">
             <div class="space"></div>
             <label for="fname">border-top-right-radius:</label>
-            <input type="text" placeholder="">
+            <input type="number" placeholder="0%" id="tr" max="50">
             <div class="space"></div>
             <label for="fname">border-bottom-right-radius:</label>
-            <input type="text" placeholder="">
+            <input type="number" placeholder="0%" id="br" max="50">
             <div class="space"></div>
             <label for="fname">border-bottom-left-radius:</label>
-            <input type="text" placeholder="">
+            <input type="number" placeholder="0%" id="bl" max="50">
             <div class="space"></div>
-            <button>Copy</button>
+            <button onclick="changeBorderRadius()">Try</button>
+            <button onclick="copyBorderRadius()">Copy</button>
         </div>
-       
-        
     </div>
 
     <div id="footer">

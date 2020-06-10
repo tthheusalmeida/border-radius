@@ -17,13 +17,26 @@ function changeBorderRadius(){
 }
 
 function copyBorderRadius() {
-    var borderRadiusValues = document.getElementById('box').style.borderRadius;
+    var borderRadius = document.getElementById('box').style.value;
 
-    let copyText = borderRadiusValues;
+    copyStringToClipboard('border-radius: ' + borderRadius + ';');
+
+    alert('This Text was copy: border-radius: ' + borderRadius + ';');
+}
+
+function copyStringToClipboard (str) {
+    var el = document.createElement('textarea');
     
-    copyText.select();
-    copyText.setSelectionRange(0, 99999)
+    el.value = str;
+    
+    el.setAttribute('readonly', '');
+    el.style = {position: 'absolute', left: '-9999px'};
+    document.body.appendChild(el);
+    
+    el.select();
     
     document.execCommand('copy');
-    alert('Copied the text: ' + copyText.value);
-  }
+    
+    document.body.removeChild(el);
+}
+ 

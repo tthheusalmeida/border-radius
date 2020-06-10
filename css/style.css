@@ -17,9 +17,10 @@
 }
 
 #content{
+    padding-top: 20px;
     height: 420px;
     background-color: rgb(50, 50, 50);
-    margin: 0px 15% 0px 15%;
+    margin: 0px 23% 0px 23%;
     border-radius: 30px;
     box-shadow: 0px 10px 10px rgb(122, 122, 122);
 }
@@ -101,4 +102,51 @@ footer{
 
 .space{
     margin-top: 8px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #box{
+        margin: 0px 23% 0px 23%;
+        height: 180px;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #content{
+        margin: 0px 20% 0px 20%;
+        height: 410px;
+    }
+
+    #content .border-values{
+        padding-top: 20px;
+    }
+
+    #box{
+        margin: 0px 25% 0px 25%;
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #content{
+        margin: 0px 10% 0px 10%;
+        height: 350px;
+    }
+
+    #content .border-values{
+        padding-top: 20px;
+    }
+
+    #box{
+        margin: 0px 24% 0px 24%;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #box{
+        margin: 0px 22% 0px 22%;
+        height: 60px;
+    }
 }

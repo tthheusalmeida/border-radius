@@ -23,6 +23,22 @@ Also, you can use this project however you want, it is free to copy, change, imp
 - After placing the values in the fields listed and pressing the "Try" button, it creates the preview of the border-radius.
 - To receive the border-radius values, press the "Copy" button and you will be ready for the clipboard.
 
+# How to use?
+
+- <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">Clone</a> this repository to your local machine using `https://github.com/tthheusalmeida/border-radius.git`
+- Unzip the cloned file
+- Open the `border-radius-master` folder
+- Double click on the `index.html` file
+- Enter the values corresponding to the border-radius fields
+- Press Try button to preview border-radius
+- Press Copy button to copy to clipboard 
+
+# Note
+
+- Border-radius values are copied in **%**, such as:  **border-radius: 0% 50% 0% 50%** 
+- The minimum value that each element can assume is **0%**
+- The maximum value that each element can assume is **50%**
+
 # Built With
 
 - <a href="https://html.spec.whatwg.org/multipage/">HTML</a> - Markup for page

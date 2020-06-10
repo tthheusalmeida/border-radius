@@ -1,4 +1,4 @@
-function changeBorderRadius(){
+function getBorderRadiusValues(){
     var border = [];
 
     border[0] = document.getElementById('tl').value;
@@ -9,16 +9,22 @@ function changeBorderRadius(){
     for(let i = 0; i<4; i++){
         if(border[i] < 0) border[i] = 0;
         else if(border[i] > 50) border[i] = 50;
+        else border[i] = 0;
+        console.log(border[i]);
     }
-    document.getElementById('box').style.borderRadius = border[0] + '% ' + 
-                                                            border[1] + '% ' + 
-                                                            border[2] + '% ' + 
-                                                            border[3] + '% ';                                                         
+    return border[0] + '% ' + border[1] + '% ' + border[2] + '% ' +  border[3] + '%';                                                            
 }
 
-function copyBorderRadius() {
-    var borderRadius = document.getElementById('box').style.value;
+function changeBorderRadius(){
+    document.getElementById('box').style.borderRadius = getBorderRadiusValues();                                                         
+}
 
+
+function copyBorderRadius() {
+    var borderRadius = getBorderRadiusValues();
+
+    console.log(borderRadius);
+     
     copyStringToClipboard('border-radius: ' + borderRadius + ';');
 
     alert('This Text was copy: border-radius: ' + borderRadius + ';');

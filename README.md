@@ -14,7 +14,7 @@ There are 80 ideas for better web development.
 This project is part of my personal portfolio and I would be very happy to receive feedback about the project, code, structure, anything that can make me a better developer!
 
 E-mail: <a href="mailto:tthheusalmeida@gmail.com">tthheusalmeida@gmail.com</a> <br>
-LinkedId: <a href="https://www.linkedin.com/in/matheus-almeida-602139182/" target="_blank">matheus-almeida-602139182</a>
+LinkedIn: <a href="https://www.linkedin.com/in/matheus-almeida-602139182/" target="_blank">matheus-almeida-602139182</a>
 
 Also, you can use this project however you want, it is free to copy, change, improve ...
 
